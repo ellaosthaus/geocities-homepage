@@ -11,8 +11,8 @@
     <style type="text/css"> * { cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat991.cur), auto !important; } </style>
 </head>
 <body>
-
-        <div id="container"><div id="topBar">You can put some text or images (or even a good old-fashioned marquee) up here!</div>
+        <div class="spinning-cookie"><img src="https://i.imgur.com/OlgQgy8.png" referrerpolicy="no-referrer" alt=""></div>
+        <div id="container">
         <div class="box21"><div class="box-top"><div class="u01"></div></div><div class="box-center"><div class="box-inner">
         <div id="header"></div>
             <div id="headerArea">
@@ -124,6 +124,26 @@
             height:23px
             }
         
+            .spinning-cookie{
+                position: absolute;
+                object-position: center;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                transform-origin: center center;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-name: spin;
+                animation-timing-function: linear;
+                margin-left: 75px;
+            }
+
+            
+            @keyframes spin {
+                from { transform: rotate(0deg) }
+                to { transform: rotate(360deg) }
+            }
+
             /* user styles */
 
             /* styles are what change the color and sizes of stuff on your site. */
@@ -180,9 +200,9 @@
                 margin: 0;
                 background-color: #08031A;
                 /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
+                
                 color: #fceaff;
-                background-image: url('http://i160.photobucket.com/albums/t197/myntebuu/SOZAI/bgpinkbarslace.gif');        
+                background-image: url('https://64.media.tumblr.com/05161525601a0770d973fe9165672168/tumblr_inline_misqm6derV1qz4rgp.png');        
     
             }
 
@@ -336,16 +356,6 @@
                 background-color: #13092D;
                 border: 1px solid #ED64F5;
                 padding: 10px;
-            }
-
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
             }
 
 
