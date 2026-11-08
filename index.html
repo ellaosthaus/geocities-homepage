@@ -11,10 +11,11 @@
     <style type="text/css"> * { cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat991.cur), auto !important; } </style>
 </head>
 <body>
-        <div class="spinning-cookie"><img src="https://i.imgur.com/OlgQgy8.png" referrerpolicy="no-referrer" alt=""></div>
+        <div class="spinning-cookie"><img src="https://i.imgur.com/OlgQgy8.png" referrerpolicy="no-referrer"></div>
+        <div class="keychain"><img src="https://i.imgur.com/1FnD6yO.png" referrerpolicy="no-referrer"></div>
         <div id="container">
         <div class="box21"><div class="box-top"><div class="u01"></div></div><div class="box-center"><div class="box-inner">
-        <div id="header"></div>
+        <div id="header"><h1>welcome to ella's place ♫ </h1></div>
             <div id="headerArea">
                 
                 
@@ -89,6 +90,37 @@
         <!-- THIS IS THE CSS !-->
         <style>
 
+            .keychain {
+                position: absolute;
+                right: 0;
+                object-fit: cover;
+                float: right;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 7%;
+                transform-origin: top center;
+                cursor: pointer;
+            }
+
+            .keychain.sway {
+                animation: keychain-sway 700ms ease-in-out;
+            }
+
+            @keyframes keychain-sway {
+                0%, 100% { transform: rotate(0deg); }
+                20% { transform: rotate(12deg); }
+                40% { transform: rotate(-10deg); }
+                60% { transform: rotate(7deg); }
+                80% { transform: rotate(-4deg); }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .keychain.sway {
+                    animation-duration: 1ms;
+                }
+            }
+
             .box21 {
             margin: auto;
             }
@@ -135,7 +167,7 @@
                 animation-iteration-count: infinite;
                 animation-name: spin;
                 animation-timing-function: linear;
-                margin-left: 10%;
+                margin-left: 15%;
             }
 
             
@@ -153,7 +185,7 @@
     the images as variables */
 
             :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+                --header-image: url('https://i.pinimg.com/736x/9b/79/fc/9b79fc35f382530e775608f196fbaa91.jpg');
                 --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
 
                 /* colors */
@@ -170,6 +202,11 @@
     (bold, italic, etc. T_T) which is why there are so many!
     
     */
+
+            @font-face{
+                font-family: 'Title Font';
+                src: url('https://mega.nz/file/RvYHnaQA#4wwFWAcDrKvN8gIjostjyoFVcLYVL-PcxFNBY86eFro.ttf');
+            }
 
             @font-face {
                 font-family: Nunito;
@@ -202,7 +239,7 @@
                 /* you can delete the line below if you'd prefer to not use an image */
                 
                 color: #fceaff;
-                background-image: url('https://64.media.tumblr.com/05161525601a0770d973fe9165672168/tumblr_inline_misqm6derV1qz4rgp.png');        
+                background-image: url('https://64.media.tumblr.com/8d74733841558b2de0710b933b264f91/tumblr_inline_ml7z8rYwOd1qz4rgp.gif');        
     
             }
 
@@ -244,12 +281,15 @@
                 width: 100%;
                 background-color: #5e4e8c;
                 /* header color here! */
-                height: 150px;
+                height: 250px;
                 /* this is only for a background image! */
                 /* if you want to put images IN the header, 
       you can add them directly to the <div id="header"></div> element! */
                 background-image: var(--header-image);
                 background-size: 100%;
+                display: flex;
+                align-items: flex-end;
+                font-family: 'Title Font';
             }
 
             /* navigation section!! */
@@ -398,5 +438,16 @@
                 }
             }
         </style>
+        <script>
+            const keychain = document.querySelector('.keychain');
+            keychain.addEventListener('click', () => {
+                keychain.classList.remove('sway');
+                void keychain.offsetWidth;
+                keychain.classList.add('sway');
+            });
+            keychain.addEventListener('animationend', () => {
+                keychain.classList.remove('sway');
+            });
+        </script>
 </body>
 </html>
