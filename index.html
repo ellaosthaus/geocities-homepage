@@ -92,7 +92,18 @@
                     </div> 
                 </aside>
                 <main>
-                    
+                    <div class="bg"><div class="inner">
+                        <p>
+                            Hello, and welcome to my homepage! I'm Ella (she/her). I'm a current freshman at Temple University, and I'm majoring in 
+                            Information Science and Technology. This is my personal website where you can find resources for website creation, in 
+                            addition to my favorite movies, shows, music, and games. This site was created for my final project for the CIS 1051 course.
+                        </p>
+                        <p>
+                            I have been programming for around 4 years now. I have taken courses in java, javascript, html/css, and I'm currently
+                            relearning python. Though, I would still consider myself a beginner! My favorite programming language is html because
+                            I love making websites and the creativity that goes into it.
+                        </p>
+                    </div></div>
 
                 </main>
                 
@@ -120,6 +131,132 @@
         <!-- THIS IS THE CSS !-->
         <style>
 
+                    ::-webkit-scrollbar {
+                      width: 14px;
+                    }
+                    
+                    ::-webkit-scrollbar:horizontal {
+                      height: 14px;
+                    }
+                    
+                    ::-webkit-scrollbar-corner {
+                      background: #ffeaf7; 
+                    }
+                    
+                 
+                    ::-webkit-scrollbar-track:vertical {
+                      background: linear-gradient(90deg, #ffe4f3, #fbe4ff); 
+                      border-radius: 0px;
+                    }
+                    
+                    ::-webkit-scrollbar-track:horizontal {
+                      background: linear-gradient(180deg, #ffe4f3, #fbe4ff);
+                      border-radius: 0px;
+                    }
+                    
+               
+                    ::-webkit-scrollbar-thumb {
+                      border: 1.5px solid #e7b6d8; 
+                      border-radius: 0px;
+                      box-shadow: inset 0 -1px 2px #fff, inset 0 1px 2px #fff;
+                    }
+                    
+                    ::-webkit-scrollbar-thumb:vertical {
+                      background: linear-gradient(90deg, #ffd1ea 40%, #f3c7ff 100%); 
+                    }
+                    
+                    ::-webkit-scrollbar-thumb:horizontal {
+                      background: linear-gradient(180deg, #ffd1ea 40%, #f3c7ff 100%);
+                    }
+                    
+                
+                    ::-webkit-scrollbar-button:horizontal:end:increment,
+                    ::-webkit-scrollbar-button:horizontal:start:decrement,
+                    ::-webkit-scrollbar-button:vertical:end:increment,
+                    ::-webkit-scrollbar-button:vertical:start:decrement {
+                      display: block;
+                    }
+                    
+                    ::-webkit-scrollbar-button:vertical {
+                      height: 15px;
+                    }
+                    
+               
+                    ::-webkit-scrollbar-button:vertical:start:decrement {
+                      background: #ffe4f3;
+                      background-image: url("https://dl.dropbox.com/s/n9ji42h9hdgdtpc/scroll3.png");
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 100% auto;
+                      border: 1.5px solid #e7b6d8;
+                      border-radius: 0px;
+                    }
+                    
+                  
+                    ::-webkit-scrollbar-button:vertical:end:increment {
+                      background: #fbe4ff;
+                      background-image: url("https://dl.dropbox.com/s/cdcco6pih7n1lae/scroll4.png");
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 100% auto;
+                      border: 1.5px solid #e7b6d8;
+                      border-radius: 0px;
+                    }
+                    
+                    ::-webkit-scrollbar-button:horizontal {
+                      width: 14px;
+                    }
+                    
+                
+                    ::-webkit-scrollbar-button:horizontal:start:decrement {
+                      background: linear-gradient(180deg, #ffe4f3, #fbe4ff);
+                      background-image: url("https://dl.dropbox.com/s/xcm618ghd823271/scroll5.png");
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 100% auto;
+                      border: 1.5px solid #e7b6d8;
+                      border-radius: 0px;
+                    }
+                    
+                 
+                    ::-webkit-scrollbar-button:horizontal:end:increment {
+                      background: linear-gradient(180deg, #ffe4f3, #fbe4ff);
+                      background-image: url("https://dl.dropbox.com/s/byeyi7am889ii9m/scroll6.png");
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 100% auto;
+                      border: 1.5px solid #e7b6d8;
+                      border-radius: 0px;
+                    }
+                    
+          
+        .bg, .inner { box-sizing: border-box;}
+
+        /* Textbox styles code from loveberry */
+        .bg {
+        /* for plain background */
+
+        /* vv for image background. remove if want plain */
+        background-color: #dce278;
+        background-size:cover;
+
+        padding:12px; /* make number bigger/smaller for a bigger/smaller border */
+        
+        margin-left:-20px;
+        margin-top:-20px;
+        width:110%;
+        }
+
+        .inner {
+        background-image:  url('https://i.pinimg.com/736x/7e/e0/d5/7ee0d56090bd1986354766b09cdb31db.jpg');
+        background-size: cover;
+        color: #907162; 
+        font-family:'Paragraph Font';
+        font-size:small;
+        padding:5px;
+        height: 300px; /* set height to "height:fit-content;" to expand with text size */
+        overflow-y:auto; /* remove overflow if you don't want a scroll */
+        }
 
 
         a:hover{
