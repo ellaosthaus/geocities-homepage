@@ -68,21 +68,31 @@
 
             <div id="flex">
                 <aside id="leftSidebar" style="margin-right: 0px;">
-                    <h1 style="color: #9c7c6d; text-align: center; font-family: 'Subtitle Font';">Navigation</h1>
+                    <h1 style="color: #8ad0bb; text-align: center; font-family: 'Subtitle Font';">Navigation</h1>
+                    <div class="navigation">
+                    <ul class="firstlist">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                    <ul class="secondlist">
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                    <img style="margin-left:-32px"src="https://pixelsafari.neocities.org/dividers/bowlace.gif">
+                    <ul class="thirdlist">
+                        <li><a href="movies.html">Movies</a></li>
+                    </ul>
+                    <ul class="fourthlist">
+                        <li><a href="shows.html">Shows</a></li>
+                    </ul>
+                    <ul class="fifthlist">
+                        <li><a href="music.html">Music</a></li>
+                    </ul>
+                    <ul class="sixthlist">
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                    </div> 
                 </aside>
                 <main>
-                    <h1>Welcome to my Layout Maker!</h1>
-                    <p><strong>Please read this first!</strong></p>
-                    <p>This tool generates a layout that is responsive, which means it looks great on phones! Use dropdowns above to customize your layout's general features. Click the button to generate your HTML and CSS, and paste it into a file on Neocities.</p>
-                    <p>Then you can replace all of the text with your own. For more customization, the CSS code has comments to explain what each part changes. Please read through the code - even if you have no idea what it means.</p>
-                    <p>If you're feeling up for a challenge, I put together <a href="learn/understanding-tweaking-my-layout-maker/" target="_blank">a guide</a> which goes over the structure of how this layout is built, along with some specific tips on how to edit it in certain ways.</p>
-                    <p>Check the links in the sidebar for more resources to build your own website!</p>
-
-                    <p> - Cat Ipsum - </p>
-                    <p>Rub my belly hiss swipe at owner's legs sniff catnip and act crazy growl at dogs in my sleep sit on the laptop for hiss at vacuum cleaner i like to spend my days sleeping and eating fishes that my human fished for me.</p>
-
-                    <p>Head nudges eat my own ears. Hey! you there, with the hands why can't i catch that stupid red dot, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff, or roll over and sun my belly curl up and sleep on the freshly laundered towels.</p>
-
+                    
 
                 </main>
                 
@@ -111,6 +121,40 @@
         <style>
 
 
+
+        a:hover{
+            font-style: italic;
+        }
+
+        .sixthlist{
+            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl76fB0f41qfamg6.png');
+        }
+
+        .fifthlist{
+            list-style-image: url('https://64.media.tumblr.com/tumblr_m230ubCgNR1qfamg6.gif');
+        }
+
+        .fourthlist{
+            list-style-image: url('https://64.media.tumblr.com/tumblr_m230s8T2mV1qfamg6.gif');
+        }  
+
+        .thirdlist{
+            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl6qodkIv1qfamg6.png');
+        }
+
+        .secondlist{
+            list-style-image: url('https://64.media.tumblr.com/tumblr_m230h4tMct1qfamg6.gif');
+        }
+
+        .firstlist {
+            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl5gmg2ZC1qfamg6.gif');
+        }
+
+        .navigation {
+            font-size:small;
+            font-family: 'Paragraph Font';
+        }
+        /* Marquee styles pulled from reddit (I can't find the exact post) */
         .marquee {
         height: 50px;
         width: 100%;
@@ -118,7 +162,6 @@
         overflow: hidden;
         position: relative;
         }
-
         .marquee div {
         display: flex;
         width: max-content;
@@ -156,7 +199,7 @@
                 transform-origin: top center;
                 cursor: pointer;
             }
-
+            /* Keychain sway animation made from copilot */
             .keychain.sway {
                 animation: keychain-sway 700ms ease-in-out;
             }
@@ -210,6 +253,7 @@
             height:23px
             }
         
+            /* Spinning cookie animation made from copilot */
             .spinning-cookie{
                 position: absolute;
                 object-position: center;
@@ -256,6 +300,11 @@
     (bold, italic, etc. T_T) which is why there are so many!
     
     */
+
+            @font-face {
+                font-family: 'Paragraph Font';
+                src: url('fonts/pixely[1].ttf');
+            }
 
             @font-face {
                 font-family: 'Subtitle Font';
@@ -329,7 +378,7 @@
             /* the area below is for all links on your page
     EXCEPT for the navigation */
             #container a {
-                color: #ED64F5;
+                color: #e66684;
                 font-weight: bold;
                 /* if you want to remove the underline
       you can add a line below here that says:
@@ -425,6 +474,7 @@
                 order: 1;
                 border: 10px solid #eb9aae;
                 background-image: url('https://64.media.tumblr.com/bf2e24bc593ffd819ff3bca96a6d42f0/tumblr_inline_ml81h1o6ux1qz4rgp.gif');
+                height: 50%;
             }
 
             #rightSidebar {
