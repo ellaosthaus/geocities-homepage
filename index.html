@@ -70,25 +70,13 @@
                 <aside id="leftSidebar" style="margin-right: 0px;">
                     <h1 style="color: #8ad0bb; text-align: center; font-family: 'Subtitle Font';">Navigation</h1>
                     <div class="navigation">
-                    <ul class="firstlist">
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                    <ul class="secondlist">
-                        <li><a href="resources.html">Resources</a></li>
-                    </ul>
+                   <button><a href="index.html">Home</a></button>
+                   <button><a href="resources.html">Resources</a></button>
                     <img style="margin-left:-32px"src="https://pixelsafari.neocities.org/dividers/bowlace.gif">
-                    <ul class="thirdlist">
-                        <li><a href="movies.html">Movies</a></li>
-                    </ul>
-                    <ul class="fourthlist">
-                        <li><a href="shows.html">Shows</a></li>
-                    </ul>
-                    <ul class="fifthlist">
-                        <li><a href="music.html">Music</a></li>
-                    </ul>
-                    <ul class="sixthlist">
-                        <li><a href="games.html">Games</a></li>
-                    </ul>
+                    <button><a href="movies.html">Movies/TV</a></button>
+                    <button><a href="music.html">Music</a></button>
+                    <button><a href="games.html">Games</a></button>
+                    <button><a href="books.html">Books/Comics</a></button>
                     </div> 
                 </aside>
                 <main>
@@ -96,11 +84,11 @@
                         <p>
                             Hello, and welcome to my homepage! I'm Ella (she/her). I'm a current freshman at Temple University, and I'm majoring in 
                             Information Science and Technology. This is my personal website where you can find resources for website creation, in 
-                            addition to my favorite movies, shows, music, and games. This site was created for my final project for the CIS 1051 course.
+                            addition to my favorite media. This site was created for my final project for the CIS 1051 course.
                         </p>
                         <p>
                             I have been programming for around 4 years now. I have taken courses in java, javascript, html/css, and I'm currently
-                            relearning python. Though, I would still consider myself a beginner! My favorite programming language is html because
+                            relearning python. Though, I would still consider myself a beginner! My favorite programming language is html/css because
                             I love making websites and the creativity that goes into it.
                         </p>
                     </div></div>
@@ -263,28 +251,25 @@
             font-style: italic;
         }
 
-        .sixthlist{
-            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl76fB0f41qfamg6.png');
+        button:hover{
+            background-image: lighter;
+            filter: brightness(1.2); 
         }
 
-        .fifthlist{
-            list-style-image: url('https://64.media.tumblr.com/tumblr_m230ubCgNR1qfamg6.gif');
-        }
+        button{
+            background-image: url('https://i.pinimg.com/736x/b6/f5/80/b6f580c9e415d0b30e5b6a88de59e0dc.jpg');
+            background-size: cover;
+            color: #e66684;
+            border: 5px solid #68413c;
+            padding: 5px 10px;
+            width: 100%;
+            cursor: pointer;
+            font-family: 'Paragraph Font';
+            font-size: small;
+            border-radius: 12px;
+            margin-bottom: 5px;
+            margin-top:5px;
 
-        .fourthlist{
-            list-style-image: url('https://64.media.tumblr.com/tumblr_m230s8T2mV1qfamg6.gif');
-        }  
-
-        .thirdlist{
-            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl6qodkIv1qfamg6.png');
-        }
-
-        .secondlist{
-            list-style-image: url('https://64.media.tumblr.com/tumblr_m230h4tMct1qfamg6.gif');
-        }
-
-        .firstlist {
-            list-style-image: url('https://64.media.tumblr.com/tumblr_lkl5gmg2ZC1qfamg6.gif');
         }
 
         .navigation {
