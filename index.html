@@ -1,4 +1,4 @@
-<!-- Majority of the comments are from the Layout Maker tool (which is linked on my resource page) -->
+<!-- Majority of the comments are from the Layout Maker tool (which is linked on my resource page) and Loveberry -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,8 +80,9 @@
                     </div> 
                 </aside>
                 <main>
-                    <div class="bg"><div class="inner">
+                    <div class="introbg"><div class="introinner">
                         <p>
+                            <img class="mii" src="images/mii.png">
                             Hello, and welcome to my homepage! I'm Ella (she/her). I'm a current freshman at Temple University, and I'm majoring in 
                             Information Science and Technology. This is my personal website where you can find resources for website creation, in 
                             addition to my favorite media. This site was created for my final project for the CIS 1051 course.
@@ -95,29 +96,72 @@
 
                 </main>
                 
-            <aside id="rightSidebar" style="margin-left: 0px;"><h2>Updates</h2>
-            <div class="box">
-                <p>I have recently updated this tool as of August 2022!</p>
-                <ul style="padding-left:10px;">
-                    <li>Rewrote the JS to generate cleaner code</li>
-                    <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                    <li>Added a couple of new features!</li>
-                    <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-                </ul>
-            </div>
-            <h2>Hi there!</h2>
-            <h3>Other Tools</h3>
-            <ul>
-                <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                </li><li><a href="webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                <li><a href="webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                <li><a href="webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                <li><a href="projects/ideas/" target="_blank">Site Ideas</a></li>
+            <aside id="rightSidebar" style="margin-left: 0px;">
+                <div class="statusbg"><div class="statusinner">
+                    <h1 style="color: #fcacd1; text-align: center; font-family: 'Navigation Font'; font-size: 18px;">Ella is currently...</h1>
+                    <img class="bounce" style="width: 100%; height: auto;" src="https://i.postimg.cc/26mkmX7s/05.png">
+                    <div style="font-family: 'Paragraph Font'; font-size: 10px; color: #775C55;">
+                    <p><b>Listening to:</b> <i>Boys for Pele</i> by Tori Amos</p>
+                    <p><b>Watching:</b> nothing atm ૮(˶ㅠ︿ㅠ)ა</p>
+                    <p><b>Playing:</b> Monster Hunter Stories</p>
+                    <p><b>Reading:</b> <i>Star Wars: Sanctuary</i> by Lamar Giles</p>
+                    </div>
+                </div></div>
             </ul></aside></div>
             <footer id="footer" style="margin-top: 0px;">CC0 Public Domain, 2022</footer>
         </div></div></div><div class="box-bottom"><div class="s01"></div></div></div>
         <!-- THIS IS THE CSS !-->
         <style>
+
+        .bounce {
+            cursor: pointer;
+            transform-origin: center bottom;
+        }
+
+        .bounce:active {
+            animation: bounce-on-click 600ms ease-in-out;
+        }
+
+        @keyframes bounce-on-click {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-18px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-8px); }
+        }
+
+        .statusbg, .statusinner { box-sizing: border-box;}
+
+        .statusbg {
+        /* for plain background */
+        background: #dfbf9f;
+
+
+        /* vv for image background. remove if want plain */
+    
+        background-size:cover;
+        
+        padding:12px; /* make number bigger/smaller for a bigger/smaller border */
+        width:200px;
+        margin-left:-20px;
+        margin-top:-20px;
+        }
+
+        .statusinner {
+        background-image:  url('https://64.media.tumblr.com/f39d80e18fbf9a8542d8ba27eddc38e6/tumblr_inline_ml9e2sgrgR1qz4rgp.gif');
+        color: #000;
+        padding:5px;
+        height:250px; /* set height to "height:fit-content;" to expand with text size */
+        overflow-y:auto; /* remove overflow if you don't want a scroll */
+        }
+
+            .mii{
+                float: left;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                width: 150px;
+                border-radius: 50% 
+            }
 
                     ::-webkit-scrollbar {
                       width: 14px;
@@ -218,10 +262,10 @@
                     }
                     
           
-        .bg, .inner { box-sizing: border-box;}
+        .introbg, .introinner { box-sizing: border-box;}
 
         /* Textbox styles code from loveberry */
-        .bg {
+        .introbg {
         /* for plain background */
 
         /* vv for image background. remove if want plain */
@@ -235,7 +279,7 @@
         width:110%;
         }
 
-        .inner {
+        .introinner {
         background-image:  url('https://i.pinimg.com/736x/7e/e0/d5/7ee0d56090bd1986354766b09cdb31db.jpg');
         background-size: cover;
         color: #907162; 
